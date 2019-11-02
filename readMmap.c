@@ -33,12 +33,14 @@ int main(int argc, char *argv[]) {
 	mem=mmap(NULL, tam, PROT_WRITE | PROT_READ,MAP_SHARED, fileno(fp), 0);
 	   if (mem == MAP_FAILED) perror("mmap");
 	//write to the file
+	i=0;
 	while (i<tam){
 		mem[i]='0';
 		i++;
 	}
 	//Ensure that the file updates now
-	msync(mem, tam, MS_SYNC);
+	// In this case it's not necessary
+	//msync(mem, tam, MS_SYNC);
 	//Unmap the file from memory and close it
 	munmap(mem, tam);
 	printf("Amaitu");

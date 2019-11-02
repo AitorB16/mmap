@@ -1,0 +1,19 @@
+Datu hauek lortzeko time programa erabili dugu -v aukerarekin. 
+(/usr/bin/time -v ./programa tmpfile2G)
+
+
+Beharrezko denbora fitxategiaren edukia aldatzeko:
+    *liburutegiko funtzioak: 22 seg
+    
+    *mmap erabiliz: 12 seg
+    
+Egindako page faults kopurua:
+
+    *liburutegiko funtzioak: 
+        Major (requiring I/O) page faults: 0
+        Minor (reclaiming a frame) page faults: 524348
+    
+    *mmap erabiliz:
+        Major (requiring I/O) page faults: 0
+        Minor (reclaiming a frame) page faults: 524347
+

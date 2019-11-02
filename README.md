@@ -10,7 +10,7 @@ of 2.1GB (2GiB).
 
 2. Compile readLib.c and readMmap.c
 
-3. Execute each file: ``` \usr\bin\time -v <program name>``` 
+3. Execute each file: ``` \usr\bin\time -v ./<program name> tmpfile2G``` 
 This will show in the terminal some information about the execution. We are looking for ```Elapsed (wall lock) time```,
 ```Minor (reclaiming a frame) page faults``` and ```Major (requiring I/O) page faults```.
 
