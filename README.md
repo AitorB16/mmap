@@ -16,3 +16,8 @@ This will show in the terminal some information about the execution. We are look
 
 Note: To ensure fair conditions, you should run ```createBigFile.sh``` before each execution as the programs will overwrite 
 each character with a 0. 
+
+## Authors
+
+* **Aitor Belenguer** 
+* **Aritz Herrero**
